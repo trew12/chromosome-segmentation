@@ -1,0 +1,31 @@
+num_epochs: 2
+scheduler_gamma: 0.96
+use_adamw: False
+lr: 0.00001
+    
+model_params:
+    num_classes: 25
+    trainable_backbone_layers: 3
+    transform_params:
+        min_size: 800
+        max_size: 3200
+        image_mean: [0.485, 0.456, 0.406]
+        image_std: [0.229, 0.224, 0.225]
+
+train_dataset_params:
+    use_aug: True
+    shuffle: True
+    batch_size: 1
+    annotations_folder: 'dataset/train/annotations'
+    image_folder: 'dataset/train/images'
+
+val_dataset_params:
+    use_aug: False
+    shuffle: False
+    batch_size: 4
+    annotations_folder: 'dataset/val/annotations'
+    image_folder: 'dataset/val/images'
+    
+dump_params:
+    dump_model_name: 'weights/model5'
+    dump_every_k_epoch: 5
