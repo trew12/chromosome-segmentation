@@ -1,6 +1,7 @@
 Chromosome Segmentation Project
 ==============================
-Weights are available here: https://drive.google.com/file/d/13cv0lQ4pjlMXCbFbGpkONJ-rabVQzEz_
+Weights are available here: https://drive.google.com/file/d/13cv0lQ4pjlMXCbFbGpkONJ-rabVQzEz_/
+
 
 To run train with standard config use
 ```bash
